@@ -35,5 +35,22 @@ const projects = [
     description:
       "This project, it is aimed to display films' information by using the TMDb API. There is a search feature according to the entered word and sorting films according to various features.  There is also a detail page for all movies. Firebase was used for login and authorization processes.",
   },
+  {
+    title: 'Recipe Master',
+    demo: 'https://recipe-master1098.netlify.app/',
+    repo: 'https://github.com/erol1098/recipe-app-react',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/recipe-app.gif?alt=media&token=6dc9f100-ddcf-415a-a95e-6dec23aac44d',
+    description: 'You can search for recipes with this app.',
+  },
+  {
+    title: 'Restaurant Reservation',
+    demo: 'https://merkez-lokantasi.vercel.app/',
+    repo: 'https://github.com/erol1098/restaurant-reservation-app',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/reservation-app.gif?alt=media&token=4806d070-6946-40a3-a5c9-10cc4c8f85b1',
+    description:
+      'This is a simple but handy restaurant reservation application. ',
+  },
 ];
 export default projects;

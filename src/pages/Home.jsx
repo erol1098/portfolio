@@ -11,11 +11,7 @@ import useFirebase from '../hooks/useFirebase';
 function Home() {
   const [projects, setProjects] = useState([]);
 
-  const { getEntries, addNewEntry } = useFirebase();
-
-  const saveProjects = () => {
-    addNewEntry('projects', {});
-  };
+  const { getEntries } = useFirebase();
 
   useEffect(() => {
     getEntries('projects').then((res) => setProjects(res));
@@ -35,7 +31,6 @@ function Home() {
             <ProjectCard data={project?.data} />
           </Col>
         ))}
-        <button onClick={saveProjects}>Add</button>
       </Row>
 
       <hr />
