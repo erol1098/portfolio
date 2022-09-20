@@ -2,15 +2,28 @@ import React from 'react';
 
 import Card from 'react-bootstrap/Card';
 
-const ProjectCard = () => {
+const ProjectCard = ({ data }) => {
   return (
-    <Card>
-      <Card.Img variant='top' src='holder.js/100px160' />
-      <Card.Body>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
+    <Card
+      as={'section'}
+      className='d-flex flex-column gap-3 bg-light shadow rounded-4'
+      style={{ width: '30rem', height: '35rem' }}
+    >
+      <Card.Img variant='top' src={data?.image} className='rounded-top' />
+
+      <Card.Body className='d-flex flex-column align-items-center gap-3 p-3'>
+        <Card.Title as={'h2'} className='fw-bold'>
+          {data?.title}
+        </Card.Title>
+        <Card.Subtitle className='d-flex gap-2'>
+          <Card.Link href={data?.demo}>Demo</Card.Link>
+          <Card.Link href={data?.repo}>GitHub</Card.Link>
+        </Card.Subtitle>
+        <Card.Text
+          className='text-center'
+          style={{ height: '10rem', overflow: 'auto' }}
+        >
+          {data?.description}
         </Card.Text>
       </Card.Body>
     </Card>

@@ -6,7 +6,7 @@ import Home from './pages/Home';
 
 const App = () => {
   return (
-    <main className='container-fluid'>
+    <main className='container-fluid mx-auto'>
       <Header />
       <Home />
     </main>

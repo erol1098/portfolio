@@ -4,7 +4,13 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      bg='dark'
+      variant='dark'
+      className='py-3'
+    >
       <Container>
         <Navbar.Brand href='#home'>My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />

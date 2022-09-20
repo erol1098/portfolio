@@ -11,15 +11,11 @@ const useFirebase = () => {
   });
 
   //? For Firestore Database CRUD Operations
-  const { addNewEntry, getEntries, updateEntries, deleteEntry, error } =
-    useFirestore(db);
+  const { addNewEntry, getEntries, error } = useFirestore(db);
 
   return {
-    //? Firestore
     addNewEntry,
     getEntries,
-    updateEntries,
-    deleteEntry,
     error,
   };
 };
