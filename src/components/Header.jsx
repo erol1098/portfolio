@@ -9,10 +9,11 @@ function Header() {
       expand='lg'
       bg='dark'
       variant='dark'
+      sticky='top'
       className='py-3'
     >
       <Container>
-        <Navbar.Brand href='#home'>My Portfolio</Navbar.Brand>
+        <Navbar.Brand href='#'>My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>

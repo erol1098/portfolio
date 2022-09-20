@@ -2,13 +2,20 @@ import React, { useEffect, useState } from 'react';
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import About from '../components/About';
+import Contact from '../components/Contact';
+
 import ProjectCard from '../components/ProjectCard';
 import useFirebase from '../hooks/useFirebase';
 
 function Home() {
   const [projects, setProjects] = useState([]);
 
-  const { getEntries } = useFirebase();
+  const { getEntries, addNewEntry } = useFirebase();
+
+  const saveProjects = () => {
+    addNewEntry('projects', {});
+  };
 
   useEffect(() => {
     getEntries('projects').then((res) => setProjects(res));
@@ -16,7 +23,10 @@ function Home() {
   }, []);
   return (
     <>
-      <h1 id='projects' className='text-center my-3'>
+      <About />
+      <hr />
+
+      <h1 id='projects' className='text-center mt-5'>
         Projects
       </h1>
       <Row xs={1} md={2} xxl={3} className='g-4 p-4'>
@@ -25,7 +35,11 @@ function Home() {
             <ProjectCard data={project?.data} />
           </Col>
         ))}
+        <button onClick={saveProjects}>Add</button>
       </Row>
+
+      <hr />
+      <Contact />
     </>
   );
 }
