@@ -1,6 +1,8 @@
 import React from 'react';
+import useFirebase from '../hooks/useFirebase';
 
 const About = () => {
+  const { downloadCV } = useFirebase();
   return (
     <>
       <h1 id='about' className='text-center my-5'>
@@ -39,7 +41,7 @@ const About = () => {
             </p>
           </div>
 
-          <button className='btn btn-primary rounded-pill'>
+          <button className='btn btn-primary rounded-pill' onClick={downloadCV}>
             Download My CV
           </button>
         </div>
