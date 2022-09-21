@@ -16,7 +16,7 @@ const Contact = () => {
           width: '100%',
           height: '50vh',
           background:
-            'url("https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/contact.jpg?alt=media&token=4e4bedc7-c8e9-4e0d-a3b6-0892e72d4c0c") fixed center  ',
+            'url("https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/contact.jpg?alt=media&token=cfe2f235-ccfa-40eb-8cee-4d38e6443cc9") fixed center  ',
         }}
       >
         <a href='mailto:erol1098@gmail.com'>

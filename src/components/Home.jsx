@@ -9,15 +9,13 @@ const Home = () => {
         width: '100%',
         height: 'calc(100vh - 7rem)',
         background:
-          'url("https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/home.jpg?alt=media&token=770c3543-e64c-4aac-b8fe-35c6d5207087") fixed center  ',
+          'url("https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/home.jpg?alt=media&token=cf3a355f-1a50-4e4d-a21a-01cd5a89f003") fixed center  ',
       }}
     >
-      <h1 className='text-center mt-5 text-primary text-uppercase'>
+      <h1 className='text-center my-5 text-primary text-uppercase'>
         Erol Mahmutoglu
       </h1>
-      <h3 className='text-success'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nulla.
-      </h3>
+      <h2 className='text-success'>I'm a Frontend Developer</h2>
     </section>
   );
 };
