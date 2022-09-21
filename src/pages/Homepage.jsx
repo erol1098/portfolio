@@ -25,12 +25,9 @@ function Homepage() {
   return (
     <>
       <Home />
-      <hr />
       <About />
-      <hr />
       <Projects projects={projects} />
       {/* <button onClick={saveProjects}>Add</button> */}
-      <hr />
       <Contact />
     </>
   );

@@ -11,7 +11,7 @@ function Header() {
       variant='dark'
       sticky='top'
       className='py-3'
-      style={{ height: '6rem' }}
+      style={{ height: '6rem', fontSize: '1.4rem' }}
     >
       <Container>
         <Navbar.Brand href='#'>My Portfolio</Navbar.Brand>

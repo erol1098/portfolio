@@ -8,4 +8,12 @@
 body {
   font-size: 1.1rem;
   font-family: 'Poppins', sans-serif;
+  background-color: aliceblue;
+  background-color: var(--bs-gray-200);
+}
+
+h1 {
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 5rem;
+  color: var(--bs-gray-900);
 }

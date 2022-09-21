@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 const Contact = () => {
   return (
     <>
-      <h1 id='contact' className='text-center mt-5'>
+      <h1 id='contact' className='text-center my-5'>
         Contact
       </h1>
 
@@ -24,15 +24,15 @@ const Contact = () => {
             className='bg-light shadow rounded-circle d-flex flex-column justify-content-center align-items-center gap-3'
             style={{ width: '5rem', height: '5rem', cursor: 'pointer' }}
           >
-            <MdEmail size={50} color='black' />
-          </div>{' '}
+            <MdEmail size={50} color='var(--bs-cyan)' />
+          </div>
         </a>
         <a href='tel:+905425891098'>
           <div
             className='bg-light shadow rounded-circle d-flex justify-content-center align-items-center'
             style={{ width: '5rem', height: '5rem', cursor: 'pointer' }}
           >
-            <MdPhoneIphone size={50} color='black' />
+            <MdPhoneIphone size={50} color='var(--bs-indigo)' />
           </div>
         </a>
         <a href='https://www.linkedin.com/in/erol-mahmutoglu/'>
@@ -40,7 +40,7 @@ const Contact = () => {
             className='bg-light shadow rounded-circle d-flex justify-content-center align-items-center'
             style={{ width: '5rem', height: '5rem', cursor: 'pointer' }}
           >
-            <BsLinkedin size={50} color='black' />
+            <BsLinkedin size={50} color='var(--bs-primary)' />
           </div>
         </a>
         <a href='https://github.com/erol1098'>

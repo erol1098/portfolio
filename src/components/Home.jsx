@@ -16,9 +16,7 @@ const Home = () => {
         Erol Mahmutoglu
       </h1>
       <h3 className='text-success'>
-        I'm a Frontend Developer based in Izmir, Turkey. I strives to build
-        immersive and beautiful web applications through carefully crafted code
-        and user-centric design.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nulla.
       </h3>
     </section>
   );
