@@ -14,7 +14,9 @@ function Header() {
       style={{ height: '6rem', fontSize: '1.4rem' }}
     >
       <Container>
-        <Navbar.Brand href='#'>My Portfolio</Navbar.Brand>
+        <Navbar.Brand href='#'>
+          <img src='../../public/logo.png' alt='logo' />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>
