@@ -9,7 +9,11 @@ const Contact = () => {
       <h1 id='contact' className='text-center mt-5'>
         Contact
       </h1>
-      <section className='d-flex justify-content-center align-items-center gap-5 py-5 mb-5'>
+
+      <section
+        className='d-flex justify-content-center align-items-center gap-5 py-5 mb-5'
+        style={{ width: '100%', height: '50vh' }}
+      >
         <a href='mailto:erol1098@gmail.com'>
           <div
             className='bg-light shadow rounded-circle d-flex flex-column justify-content-center align-items-center gap-3'

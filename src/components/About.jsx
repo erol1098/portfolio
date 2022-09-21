@@ -7,7 +7,10 @@ const About = () => {
       <h1 id='about' className='text-center my-5'>
         About
       </h1>
-      <section className='d-flex gap-5'>
+      <section
+        className='d-flex gap-5'
+        style={{ width: '100%', height: 'calc(100vh - 7rem)' }}
+      >
         <div className='w-50'>
           <Card.Img
             variant='top'

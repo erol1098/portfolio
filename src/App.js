@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 import Header from './components/Header';
-import Home from './pages/Home';
+import Homepage from './pages/Homepage';
 
 const App = () => {
   return (
     <main className='container-fluid mx-auto'>
       <Header />
-      <Home />
+      <Homepage />
     </main>
   );
 };

@@ -7,7 +7,7 @@ const ProjectCard = ({ data }) => {
     <Card
       as={'section'}
       className='d-flex flex-column gap-3 bg-light shadow justify-content-between rounded-4'
-      style={{ width: '30rem', height: '40rem' }}
+      style={{ width: '30rem', height: '25rem' }}
     >
       <Card.Img
         variant='top'
@@ -18,7 +18,7 @@ const ProjectCard = ({ data }) => {
 
       <Card.Body
         className='d-flex flex-column align-items-center gap-3 p-3 '
-        style={{ height: '10rem' }}
+        style={{ height: '9rem' }}
       >
         <Card.Title as={'h2'} className='fw-bold'>
           {data?.title}
@@ -27,9 +27,6 @@ const ProjectCard = ({ data }) => {
           <Card.Link href={data?.demo}>Demo</Card.Link>
           <Card.Link href={data?.repo}>GitHub</Card.Link>
         </Card.Subtitle>
-        <Card.Text className='text-center' style={{ overflow: 'auto' }}>
-          {data?.description}
-        </Card.Text>
       </Card.Body>
     </Card>
   );
