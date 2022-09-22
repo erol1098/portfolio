@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: aliceblue;
   background-color: var(--bs-gray-200);
+  min-width: 900px;
 }
 
 h1 {

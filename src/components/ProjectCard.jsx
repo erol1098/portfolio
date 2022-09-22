@@ -6,7 +6,7 @@ const ProjectCard = ({ data }) => {
   return (
     <Card
       as={'section'}
-      className='d-flex flex-column gap-3 bg-light shadow justify-content-between rounded-4'
+      className='d-flex flex-column gap-3 bg-light shadow justify-content-between rounded-2'
       style={{ width: '30rem', height: '25rem' }}
     >
       <Card.Img

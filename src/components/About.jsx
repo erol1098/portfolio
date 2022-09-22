@@ -8,23 +8,23 @@ const About = () => {
         About Me
       </h1>
       <section
-        className='d-flex justify-content-center gap-3'
+        className='d-flex flex-wrap justify-content-center align-items-center gap-3 p-3'
         style={{
           width: '100%',
-          height: 'calc(100vh - 7rem)',
+          minHeight: 'calc(100vh - 7rem)',
           background:
             'url("https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/about.jpg?alt=media&token=ac258a68-8bdb-4c10-bbc9-0b50b796f8b0") fixed center  ',
         }}
       >
-        <div className=' w-50 d-flex align-items-center'>
+        {/* <div className='d-flex align-items-center'>
           <img
             src='https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/avatar.jpg?alt=media&token=67f957c2-5bf4-458d-a5f8-37e514194f45'
             alt='author'
-            width={512}
+            width={300}
             className='d-block mx-auto rounded-circle'
           />
-        </div>
-        <div className='text-dark text-center d-flex  flex-column justify-content-between align-items-end w-50 p-5 bg-light'>
+        </div> */}
+        <div className='text-dark text-center d-flex flex-column justify-content-between align-items-end p-5 m-5 bg-light'>
           <h3>
             I'm a Frontend Developer based in Izmir, Turkey. I strives to build
             immersive and beautiful web applications through carefully crafted

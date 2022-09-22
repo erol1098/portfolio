@@ -11,11 +11,16 @@ function Header() {
       variant='dark'
       sticky='top'
       className='py-3'
-      style={{ height: '6rem', fontSize: '1.4rem' }}
+      style={{ minHeight: '6rem', fontSize: '1.4rem' }}
     >
       <Container>
         <Navbar.Brand href='#'>
-          <img src='../../public/logo.png' alt='logo' />
+          {/* <img
+            src='https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/logo.png?alt=media&token=44c02a12-607f-426c-8523-7dac3d4c2f81'
+            alt='logo'
+            width={80}
+            className='rounded-circle'
+          /> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
