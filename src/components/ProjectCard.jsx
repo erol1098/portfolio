@@ -24,8 +24,12 @@ const ProjectCard = ({ data }) => {
           {data?.title}
         </Card.Title>
         <Card.Subtitle className='d-flex gap-2 fw-bold'>
-          <Card.Link href={data?.demo}>Demo</Card.Link>
-          <Card.Link href={data?.repo}>GitHub</Card.Link>
+          <Card.Link href={data?.demo} rel='noreferrer' target='_blank'>
+            Demo
+          </Card.Link>
+          <Card.Link href={data?.repo} rel='noreferrer' target='_blank'>
+            GitHub
+          </Card.Link>
         </Card.Subtitle>
       </Card.Body>
     </Card>

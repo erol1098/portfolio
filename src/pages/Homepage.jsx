@@ -6,6 +6,7 @@ import Home from '../components/Home';
 import Projects from '../components/Projects';
 
 import useFirebase from '../hooks/useFirebase';
+// import p from '../utils/projects';
 
 function Homepage() {
   const [projects, setProjects] = useState([]);
@@ -13,9 +14,8 @@ function Homepage() {
   // eslint-disable-next-line no-unused-vars
   const { getEntries, addNewEntry } = useFirebase();
 
-  // const saveProjects = () => {
-  //   addNewEntry('projects', {});
-  // };
+  // const saveProjects = () =>
+  //   p.map((project) => addNewEntry('projects', project));
 
   useEffect(() => {
     getEntries('projects').then((res) => setProjects(res));
@@ -25,9 +25,12 @@ function Homepage() {
   return (
     <>
       <Home />
+
       <About />
       <Projects projects={projects} />
-      {/* <button onClick={saveProjects}>Add</button> */}
+      {/* <button className='btn btn-success w-100' onClick={saveProjects}>
+        Add
+      </button> */}
       <Contact />
     </>
   );
