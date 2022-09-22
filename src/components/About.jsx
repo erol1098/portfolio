@@ -1,8 +1,7 @@
 import React from 'react';
-import useFirebase from '../hooks/useFirebase';
+import Skills from './Skills';
 
 const About = () => {
-  const { downloadCV } = useFirebase();
   return (
     <>
       <h1 id='about' className='text-center my-5'>
@@ -25,34 +24,24 @@ const About = () => {
             className='d-block mx-auto rounded-circle'
           />
         </div>
-        <div className='text-success text-center d-flex  flex-column justify-content-between align-items-end w-50 p-5 bg-light bg-opacity-75'>
+        <div className='text-dark text-center d-flex  flex-column justify-content-between align-items-end w-50 p-5 bg-light'>
           <h3>
             I'm a Frontend Developer based in Izmir, Turkey. I strives to build
             immersive and beautiful web applications through carefully crafted
             code and user-centric design.
           </h3>
-          <div>
-            {' '}
-            <h4>Skills</h4>
-            <p>
-              HTML5, CSS3, JavaScript, ES6+, React, Redux, Django REST, Python,
-              Styled Components, Bootstrap, SASS/SCSS, Material UI, Axios,
-              Firebase, Postman, Formik, Yup, REST APIs, Linux, SQL, Git.
-            </p>
-          </div>
-
-          <button className='btn btn-primary rounded-pill' onClick={downloadCV}>
-            Download My CV
+          <Skills />
+          <button className='btn btn-primary p-3 rounded-pill'>
+            <a
+              className='text-white text-decoration-none'
+              href='https://firebasestorage.googleapis.com/v0/b/portfolio-erol1098.appspot.com/o/erol-mahmutoglu-resume.pdf?alt=media&token=8595ab64-e72c-411b-b6a4-e2685cec4ce8'
+              rel='noreferrer'
+              target='_blank'
+            >
+              Download My CV
+            </a>
           </button>
         </div>
-        {/* <div>
-          <p>
-            HTML5, CSS3, JavaScript, ES6+, Python, Styled Components, Bootstrap,
-            Axios, SASS/SCSS, Material UI, Firebase, Postman, Formik, Yup,
-            Linux, SQL, REST APIs, OOP. Technologies: React, Redux, Django REST,
-            Git.
-          </p>
-        </div> */}
       </section>
     </>
   );

@@ -35,7 +35,11 @@ const Contact = () => {
             <MdPhoneIphone size={50} color='var(--bs-indigo)' />
           </div>
         </a>
-        <a href='https://www.linkedin.com/in/erol-mahmutoglu/'>
+        <a
+          href='https://www.linkedin.com/in/erol-mahmutoglu/'
+          rel='noreferrer'
+          target='_blank'
+        >
           <div
             className='bg-light shadow rounded-circle d-flex justify-content-center align-items-center'
             style={{ width: '5rem', height: '5rem', cursor: 'pointer' }}
@@ -43,7 +47,7 @@ const Contact = () => {
             <BsLinkedin size={50} color='var(--bs-primary)' />
           </div>
         </a>
-        <a href='https://github.com/erol1098'>
+        <a href='https://github.com/erol1098' rel='noreferrer' target='_blank'>
           <div
             className='bg-light shadow rounded-circle d-flex justify-content-center align-items-center'
             style={{ width: '5rem', height: '5rem', cursor: 'pointer' }}
